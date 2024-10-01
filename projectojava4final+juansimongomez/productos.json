@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre": "Camiseta Básica",
+        "precio": 19.99,
+        "imagen": "images/Camiseta Básica.jpg",
+        "categoria": "camisetas",
+        "oferta": false
+    },
+    {
+        "id": 2,
+        "nombre": "Pantalón Vaquero",
+        "precio": 49.99,
+        "imagen": "images/Pantalón Vaquero.jpg",
+        "categoria": "pantalones",
+        "oferta": true
+    },
+    {
+        "id": 3,
+        "nombre": "Zapatos Deportivos",
+        "precio": 79.99,
+        "imagen": "images/Zapatos Deportivos.jpg",
+        "categoria": "zapatos",
+        "oferta": false
+    },
+    {
+        "id": 4,
+        "nombre": "Gorra de Béisbol",
+        "precio": 14.99,
+        "imagen": "images/Gorra de Béisbol.jpg",
+        "categoria": "accesorios",
+        "oferta": true
+    },
+    {
+        "id": 5,
+        "nombre": "Vestido de Verano",
+        "precio": 39.99,
+        "imagen": "images/Vestido de Verano.jpg",
+        "categoria": "vestidos",
+        "oferta": false
+    },
+    {
+        "id": 6,
+        "nombre": "Chaqueta de Cuero",
+        "precio": 99.99,
+        "imagen": "images/Chaqueta de Cuero.jpg",
+        "categoria": "chaquetas",
+        "oferta": true
+    },
+    {
+        "id": 7,
+        "nombre": "Bufanda de Lana",
+        "precio": 24.99,
+        "imagen": "images/Bufanda de Lana.jpg",
+        "categoria": "accesorios",
+        "oferta": false
+    },
+    {
+        "id": 8,
+        "nombre": "Camisa de Vestir",
+        "precio": 59.99,
+        "imagen": "images/Camisa de Vestir.jpg",
+        "categoria": "camisetas",
+        "oferta": true
+    }
+]

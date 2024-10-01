@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionStore - Tu Tienda Virtual de Ropa</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-tshirt"></i> FashionStore</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#ofertas">Ofertas</a></li>
+                    <li><a href="#carrito"><i class="fas fa-shopping-cart"></i> Carrito <span id="carrito-count">0</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h2>Bienvenido a FashionStore</h2>
+                <p>Descubre las últimas tendencias en moda</p>
+                <a href="#productos" class="btn">Ver Productos</a>
+            </div>
+        </section>
+
+        <section id="productos" class="productos">
+            <div class="container">
+                <h2>Nuestros Productos</h2>
+                <div class="filtros">
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria">
+                        <option value="todos">Todos</option>
+                        <option value="camisetas">Camisetas</option>
+                        <option value="pantalones">Pantalones</option>
+                        <option value="zapatos">Zapatos</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                    <label for="ordenar">Ordenar por:</label>
+                    <select id="ordenar">
+                        <option value="nombre">Nombre</option>
+                        <option value="precio-asc">Precio: Menor a Mayor</option>
+                        <option value="precio-desc">Precio: Mayor a Menor</option>
+                    </select>
+                </div>
+                <div id="lista-productos" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="ofertas">
+            <div class="container">
+                <h2>Ofertas Especiales</h2>
+                <div id="lista-ofertas" class="grid"></div>
+            </div>
+        </section>
+
+        <section id="carrito" class="carrito">
+            <div class="container">
+                <h2>Tu Carrito</h2>
+                <div id="carrito-contenido">
+                    <ul id="lista-carrito"></ul>
+                    <div class="carrito-resumen">
+                        <p>Subtotal: <span id="subtotal-carrito">0</span>€</p>
+                        <p>IVA (21%): <span id="iva-carrito">0</span>€</p>
+                        <p>Total: <span id="total-carrito">0</span>€</p>
+                    </div>
+                    <button id="comprar" class="btn">Finalizar Compra</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FashionStore - Tu Tienda Virtual de Ropa</p>
+            <div class="redes-sociales">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="notificacion" class="notificacion"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
